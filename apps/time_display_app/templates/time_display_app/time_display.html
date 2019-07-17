@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'time_display_app/css/time_display.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Time Display</title>
+</head>
+
+<body>
+    <div class="container vh-100 d-flex align-items-center">
+        <div class="mx-auto">
+            <h4 class="border border-primary">The current time and date:</h4>
+            <div class="border border-primary">
+                <h2>{{date}}</h2>
+                <h2>{{time}}</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
